@@ -59,15 +59,11 @@ namespace task3
                 }
 
             }
-            Int64 result = 0;
+            Int64 result = 1;
             foreach (var vector in x)
             {
-                if (result == 0) { 
-                    result = vector.trees;
-                } else { 
+                
                     result = result * vector.trees;
-                };
-
                 
             }
             Console.WriteLine(result);

@@ -35,10 +35,7 @@ namespace task2
             {
                 var contains1 = (password.Item4[password.Item1-1] == password.Item3);
                 var contains2 = (password.Item4[password.Item2-1] == password.Item3);
-                if (contains1 && contains2) continue;
-                if (!contains1 && !contains2) continue;
-
-                correctPasswords++;
+                if (contains1 ^ contains2) correctPasswords++;
             }
                 
                     
